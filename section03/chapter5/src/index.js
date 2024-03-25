@@ -1,6 +1,5 @@
-import mul, { add, sub } from "./math.js";
-
-import randomcolor from "randomcolor";
+import mul, { add, sub } from './math.js';
+import randomcolor from 'randomcolor';
 
 const color = randomcolor();
 console.log(color);
