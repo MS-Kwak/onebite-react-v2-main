@@ -1,12 +1,13 @@
-import { useReducer } from "react";
+import { useReducer } from 'react';
 
 // reducer : 변환기
 // -> 상태를 실제로 변화시키는 변환기 역할
+// state값과 action객체를 인수로 받아와요
 function reducer(state, action) {
   switch (action.type) {
-    case "INCREASE":
+    case 'INCREASE':
       return state + action.data;
-    case "DECREASE":
+    case 'DECREASE':
       return state - action.data;
     default:
       return state;
@@ -22,14 +23,14 @@ const Exam = () => {
     // 인수: 상태가 어떻게 변화되길 원하는지
     // -> 액션 객체
     dispatch({
-      type: "INCREASE",
+      type: 'INCREASE',
       data: 1,
     });
   };
 
   const onClickMinus = () => {
     dispatch({
-      type: "DECREASE",
+      type: 'DECREASE',
       data: 1,
     });
   };
