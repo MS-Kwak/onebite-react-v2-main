@@ -23,6 +23,7 @@ function App() {
     }
     console.log('update');
   });
+
   // 3. 언마운트 : 죽음 - Even.jsx 참고
 
   // count나 input state값이 하나만 바껴도 첫번째 콜백함수가 실행됨.
